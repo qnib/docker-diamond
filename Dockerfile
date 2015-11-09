@@ -1,7 +1,7 @@
 ###### QNIBTerminal images
-FROM qnib/consul
+FROM qnib/consul:fd22
 
-RUN yum install -y --nogpgcheck gcc python-devel  python-configobj lm_sensors python-pip && \
+RUN dnf install -y --nogpgcheck gcc python-devel  python-configobj lm_sensors python-pip && \
     pip install --upgrade pip && \
     pip install diamond pysensors && \
     rm -rf /etc/diamond && mkdir -p /var/log/diamond

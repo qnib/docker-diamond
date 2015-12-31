@@ -1,5 +1,7 @@
 ###### QNIBTerminal images
-FROM qnib/consul
+FROM qnib/sensu
+
+ENV SENSU_CLIENT=true
 
 RUN yum install -y --nogpgcheck gcc python-devel  python-configobj lm_sensors python-pip && \
     pip install --upgrade pip && \

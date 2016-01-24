@@ -1,5 +1,5 @@
 ###### QNIBTerminal images
-FROM qnib/consul
+FROM qnib/consul:cos7
 
 RUN yum install -y --nogpgcheck gcc python-devel  python-configobj lm_sensors python-pip && \
     pip install --upgrade pip && \

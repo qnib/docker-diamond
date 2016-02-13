@@ -1,5 +1,5 @@
 ###### QNIBTerminal images
-FROM qnib/syslog
+FROM qnib/sensu
 
 RUN yum install -y --nogpgcheck gcc python-devel  python-configobj lm_sensors python-pip && \
     pip install --upgrade pip && \
